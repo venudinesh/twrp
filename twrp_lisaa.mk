@@ -10,7 +10,7 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 
 # Inherit some common realme stuff.
-$(call inherit-product, vendor/realme/config/common.mk)
+$(call inherit-product, vendor/twrp/config/common.mk)
 
 # Inherit from realme device
 $(call inherit-product, device/realme/lisaa/device.mk)
@@ -19,7 +19,7 @@ PRODUCT_BRAND := Realme
 PRODUCT_DEVICE := lisaa
 PRODUCT_MANUFACTURER := Realme
 PRODUCT_MODEL := RMX3562
-PRODUCT_NAME := lineage_lisa
+PRODUCT_NAME := twrp_lisaa
 
 PRODUCT_GMS_CLIENTID_BASE := android-realme
 
