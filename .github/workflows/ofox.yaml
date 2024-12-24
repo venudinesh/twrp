@@ -20,7 +20,7 @@ on:
       DEVICE_TREE:
        description: 'Custom Recovery Tree'
        required: true
-       default: 'https://github.com/venudinesh/twrp-lisaa.git'
+       default: 'https://github.com/venudinesh/twrp.git'
       DEVICE_TREE_BRANCH:
         description: 'DEVICE_TREE_BRANCH'
         required: true
