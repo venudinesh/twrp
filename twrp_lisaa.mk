@@ -5,15 +5,29 @@
 # SPDX-License-Identifier: Apache-2.0
 #
 
-# Inherit from those products. Most specific first.
-$(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit.mk)
-$(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
-
 # Inherit some common realme stuff.
 $(call inherit-product, vendor/twrp/config/common.mk)
 
 # Inherit from realme device
 $(call inherit-product, device/realme/lisaa/device.mk)
+
+# Configure virtual_ab_ota.mk
+$(call inherit-product, $(SRC_TARGET_DIR)/product/virtual_ab_ota.mk)
+
+# Configure twrp config common.mk
+$(call inherit-product, vendor/twrp/config/common.mk)
+
+# Configure emulated_storage.mk
+$(call inherit-product, $(SRC_TARGET_DIR)/product/emulated_storage.mk)
+
+# Configure launch_with_vendor_ramdisk.mk
+$(call inherit-product, $(SRC_TARGET_DIR)/product/virtual_ab_ota/launch_with_vendor_ramdisk.mk)
+
+# Configure base.mk
+$(call inherit-product, $(SRC_TARGET_DIR)/product/base.mk)
+
+# Configure core_64_bit_only.mk
+$(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit_only.mk)
 
 PRODUCT_BRAND := Realme
 PRODUCT_DEVICE := lisaa
