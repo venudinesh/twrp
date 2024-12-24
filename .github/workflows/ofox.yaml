@@ -24,7 +24,7 @@ on:
       DEVICE_TREE_BRANCH:
         description: 'DEVICE_TREE_BRANCH'
         required: true
-        default: 'ofox'
+        default: '12.1'
       DEVICE_PATH:
         description: 'DEVICE_PATH'
         required: true
